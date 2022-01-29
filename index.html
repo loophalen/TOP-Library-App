@@ -22,28 +22,43 @@
         </div>
 
         <div class="btn-container">
-            <button id="open-form">Add New Book</button>
+            <button id="open-form">Open Form</button>
         </div>
 
-        <div class="card-container">
-            <div id="book-item"></div>
-        </div>
+            <!-- book list -->
+            <div class="book-list">
+                <div id="book-item">
+                    <ul id="book-info"></ul>
+                </div>
+            </div>
 
-        <div id="book-popup">
-            <form id="form-container">
-                <h3>Add New Book</h3>
-                <label for="title">Title</label>
-                <input type="text" id="book-title" />
-                <label for="author">Author</label>
-                <input type="text" id="book-author" />
-                <label for="pages">Pages</label>
-                <input type="text" id="book-pages"/>
-                <button type="submit" class="btn-add">Submit</button>
-                <button type="button" class="btn-close">Close</button>
+            <div id="book-popup">
+                <form id="form-container">
+                    <h3>Add New Book</h3>
+                    <label for="title">Title</label>
+                    <input type="text" id="book-title" />
+
+                    <label for="author">Author</label>
+                    <input type="text" id="book-author" />
+
+                    <label for="pages">Pages</label>
+                    <input type="text" id="book-pages"/>
+
+                    <label for="read">
+                        Read?
+                        <select name="read-selection" id="readCheckBox" />
+                        <option value="read">Yes</option>
+                        <option value="not read">No</option>
+                    </select>
+                    </label>
+
+                    
+                    <button type="submit" class="btn-add">Submit</button>
+                    <button type="button" class="btn-close">Close</button>
                 </form>
-                
-            </form>
-        </div>
+            </div>
+
+
         <footer>
             <div>
                 footer content
