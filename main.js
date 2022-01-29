@@ -1,23 +1,37 @@
 let myLibrary = [];
 
-function book(title, author, pages, read) {
+const bookDisplay = document.querySelector("#book-item");
+const openFormBtn = document.querySelector("#open-form");
+openFormBtn.addEventListener("click", openForm);
+const closeBtn = document.querySelector(".btn-close");
+closeBtn.addEventListener("click", closeForm);
+
+function Book() {
+  //the constructor
+  myLibrary.forEach((book) => {
+    const bookCard = document.createElement("h1");
+    bookCard.textContent = book;
+    bookDisplay.appendChild(bookCard);
+  });
+}
+
+// object constructor
+function addBookToLibrary(title, author, pages) {
+  //add books
   this.title = title;
   this.author = author;
   this.pages = pages;
-  this.read = read;
-  let readText = "";
-
-  if (this.read === true) {
-    readText = "read";
-  } else {
-    readText = "not read yet";
-  }
-
   this.info = function () {
-    return `${this.title} by ${this.author}, ${this.pages} pages, ${readText}`;
+    return `${title} by ${author}, ${pages} pages`;
   };
 }
 
-const theHobbit = new book("The Hobbit", "J.R.R. Tolkien", 295, false);
+Book();
 
-console.log(theHobbit.info());
+function openForm() {
+  document.getElementById("book-form").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("book-form").style.display = "none";
+}
