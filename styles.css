@@ -1,0 +1,94 @@
+* {
+  font-family: "Roboto Mono", monospace;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  background: #ffffff;
+  overflow: auto;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: line;
+  align-items: center;
+  font-size: 20px;
+  margin: 20px 0px;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+.book-popup {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 30px;
+}
+
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 350px;
+  padding: 30px;
+  border: 3px solid black;
+}
+
+label,
+input {
+  display: block;
+}
+
+label {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+button {
+  margin-bottom: 10px;
+}
+
+.form-container > .btn-add {
+  margin-top: 10px;
+  color: black;
+  padding: 8px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.form-container > .btn-close {
+  color: black;
+  padding: 8px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.btn-add:hover {
+  background-color: #4dab9a;
+}
+
+.btn-close:hover {
+  background-color: #ff7369;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: auto;
+  border: none;
+  align-items: center;
+  min-height: 75px;
+  background-color: #f4f4f4;
+}
