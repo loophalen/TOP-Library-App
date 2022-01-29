@@ -25,16 +25,20 @@
             <button id="open-form">Add New Book</button>
         </div>
 
-        <div class="book-popup" id="book-form">
-            <form action="main.js" class="form-container">
+        <div class="card-container">
+            <div id="book-item"></div>
+        </div>
+
+        <div id="book-popup">
+            <form id="form-container">
                 <h3>Add New Book</h3>
                 <label for="title">Title</label>
-                <input type="text" placeholder="Enter Title" name="title" />
+                <input type="text" id="book-title" />
                 <label for="author">Author</label>
-                <input type="text" placeholder="Enter Author" name="author" />
+                <input type="text" id="book-author" />
                 <label for="pages">Pages</label>
-                <input type="text" placeholder="Enter Number of Pages" name="pages"/>
-                <button type="submit" class="btn-add">Add</button>
+                <input type="text" id="book-pages"/>
+                <button type="submit" class="btn-add">Submit</button>
                 <button type="button" class="btn-close">Close</button>
                 </form>
                 
